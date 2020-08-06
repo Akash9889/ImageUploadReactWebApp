@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 1em;
+    background-color: rgba(0,0,0,0.6);
+    color : white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading{
+    font-size: large;
+    letter-spacing: .3em;
+    margin: auto;
+    width: max-content;
+    
+}
+
+.blank-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:1024px;
+    height:512px;
+    border: whitesmoke dashed 3px ;
+}
+
+.inputfile{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 400;
+    color: white;
+    width:200px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    font-size: 1.25em;
+    box-shadow: 0px 0px 2px 0px whitesmoke;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.inputfile2 + label {
+    font-size: 1.25em;
+    font-weight: 400;
+    color: white;
+    width:200px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.inputfile2:focus + label,
+.inputfile2 + label:hover {
+    font-size: 1.25em;
+    box-shadow: 0px 0px 2px 0px whitesmoke;
+}
+
+.inputfile2 {
+    width: 200px;
+    height: 45px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 1.5em;
+    z-index: 10;
+    cursor: pointer;
+}
+.upload-button{
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    width:max-content;
+    text-align: right;
+    padding: 10px 10px 10px 10px;
+    background-color: #008CBA;
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 1em;
+    
+}
+
+.upload-button:hover {
+    background-color: #0079a1dc;
+    box-shadow: 0px 0px 2px 0px whitesmoke;
+}
+
+.image-conatiner{
+    border: whitesmoke dashed 3px ;
+}
+
+.ImageCropBox{
+    
+    width:1200px
+   
+}
