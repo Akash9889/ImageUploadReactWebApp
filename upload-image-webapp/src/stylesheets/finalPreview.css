@@ -1,0 +1,15 @@
+
+.preview-image{
+    display: block;
+    margin: 1em;
+    border:double black 1px;
+    
+}
+.preview-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: whitesmoke dashed 3px ;
+    padding: 2em;
+}
