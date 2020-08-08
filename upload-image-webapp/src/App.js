@@ -1,7 +1,7 @@
 import React,{ useState } from 'react'
-import './App.css'
 import FinalPreview from './components/FinalPreview'
-import Uploader from './components/Uploader'
+import Uploader from './containers/Uploader'
+import './App.css'
 
 
 export default function App() {
@@ -27,7 +27,6 @@ export default function App() {
                 handleShowPreview = {handleShowPreview}
             />:
             <>
-                <p id ='heading'>CROPPED IMAGES</p>
                 <FinalPreview croppedImagesArry = {destinationImages} />  
             </>}
         </>
