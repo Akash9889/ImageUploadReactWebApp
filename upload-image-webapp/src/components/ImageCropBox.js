@@ -4,8 +4,6 @@ import Cropper from 'cropperjs';
 import "cropperjs/dist/cropper.min.css";
 
 export default function ImageCropBox(ImgObj) {
-
-   // const [image, setImage] = useState()
     const [previewImage, setPrivewImage] = useState('')
     const imageRef1 = useRef()
    
@@ -14,6 +12,7 @@ export default function ImageCropBox(ImgObj) {
             zoomable: false,
             scalable: false,
             aspectRatio: ImgObj.aspectRatio, 
+            responsive:false,
             crop : () => {
                 const canvas = cropper.getCroppedCanvas({width:ImgObj.canvasWidth, height: ImgObj.canvasHeight});
                 setPrivewImage(canvas.toDataURL("image/jpg"))

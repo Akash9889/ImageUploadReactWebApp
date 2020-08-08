@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ImageCropBox from './ImageCropBox'
-import {imageFormats} from '../imageFormats.js'
+import {imageFormats} from '../utils/imageFormats.js'
 
 export default function Uploader({handleDestinationImage, handleShowPreview}) {
     const [imageSourcePath, setImageSourcePath] = useState('')

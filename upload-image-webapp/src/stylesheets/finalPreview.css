@@ -13,3 +13,27 @@
     border: whitesmoke dashed 3px ;
     padding: 2em;
 }
+
+#uploader{
+    margin-top: 1em;
+    border-radius: 5px;
+}
+#success{
+    font-size: large;
+    letter-spacing: .3em;
+    margin: auto;
+    width: max-content;
+    margin-bottom: 1em;
+}
+#heading{
+    font-size: large;
+    letter-spacing: .1em;
+    margin: auto;
+    width: max-content;
+    margin-bottom: 1em;
+    
+}
+
+    
+
+        
