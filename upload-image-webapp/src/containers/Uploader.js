@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import CroppedImages from '../components/CroppedImages'
 import ChooseFileBox from '../components/ChooseFileBox'
-import {imagePath} from '../serviceUtils/FileReader'
+import {imagePath} from '../serviceUtils/fileReader'
 
 export default function Uploader({handleDestinationImage, handleShowPreview}) {
     const [imageSourcePath, setImageSourcePath] = useState('')

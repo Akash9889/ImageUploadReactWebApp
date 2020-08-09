@@ -1,4 +1,4 @@
-export const errorHandler = (error) => {
+export const uploadErrorHandler = (error) => {
     let successMessage = document.getElementById('success');
     switch (error.code) {
     case 'storage/unauthorized':
@@ -14,7 +14,7 @@ export const errorHandler = (error) => {
         successMessage.textContent = `Uploading FAILED!` 
         break;
     default :  
-        successMessage.textContent = `Uploading FAILED!, Error unknown `
+        alert(`Uploading FAILED!, Error unknown `)
         break; 
     }
 }
